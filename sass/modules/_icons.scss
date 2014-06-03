@@ -1,0 +1,23 @@
+/**
+ * icons
+ */
+
+.icon {
+  display: inline-block;
+}
+
+.down-arrow-lg {
+  background: url(../images/icons.png);
+  width: 11px;
+  height: 14px;
+  margin-left: 0.25em;
+}
+
+.icon.flag-icon {
+  background: url(../images/icons.png) no-repeat -20px 0px;
+  width: 33px;
+  height: 15px;
+  top: 3px;
+  position: relative;
+  margin-left: 0.5em;
+}

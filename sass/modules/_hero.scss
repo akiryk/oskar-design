@@ -1,0 +1,20 @@
+/**
+ * Hero
+ */
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  height: 486px;
+  overflow: hidden;
+}
+
+.hero>img {
+  position: relative;
+  left: 50%;
+  margin-left: -800px;
+  max-width: none;
+}
+
+

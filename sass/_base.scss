@@ -1,0 +1,75 @@
+/**
+ * Base.scss
+ * Handle base html styles (body, p, a, etc). 
+ * These should generally be unmodified tags rather than classnames or ids
+ * except for a couple exceptions
+ * 
+ */
+
+body {
+  background-color: $gray;
+  color: #222;
+  font-family: $sans-stack;
+  font-size: 100%; // 16px
+  line-height: 1.6;
+  text-rendering:optimizeLegibility; // helps with kerning and ligatures
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.content.row {
+  top: -2em;
+  background-color: $gray;
+  position: relative;
+  overflow: hidden;
+}
+
+
+p.first {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 2.125em;
+  font-weight: 300;
+  margin: 0.65em 0 0.15em 0;
+}
+
+h3.extra {
+  margin-bottom: 0.5em;
+}
+
+button,
+.button {
+  border: none;
+  border-radius: 2px;
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+button,
+.button {
+  background: $aqua;
+  color: #fff;
+
+  &:hover {
+    background-color: $aqua-dark;
+  }
+}
+
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  height: 14em;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+}

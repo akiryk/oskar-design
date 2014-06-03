@@ -1,0 +1,46 @@
+/**
+ * Lists
+ */
+
+%denatured-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// <ul class="vertical-list">
+.vertical-list {
+  @extend %denatured-list;
+}
+
+.horizontal-list {
+  @extend %denatured-list;
+  >li {
+    display:      inline-block;
+    margin-left:  1em;
+    padding-left: 1em;
+
+    &:first-of-type {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    &:nth-of-type(n+2) {
+      border-left: 1px solid #ccc;
+    }
+  }
+}
+
+.three-column-list {
+  @extend %denatured-list;
+  width:515px;
+  margin-bottom:20px;
+  overflow:hidden;
+  >li {
+    line-height:2;
+    float:left;
+    display:inline;
+    width:33.333%;
+  }
+
+}
